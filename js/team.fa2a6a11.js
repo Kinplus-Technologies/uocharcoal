@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["team"],{"0767":function(e,n,a){"use strict";a.r(n);var t=function(){var e=this,n=e.$createElement,a=e._self._c||n;return a("div",[a("team-page")],1)},u=[],c=a("87a1"),o={name:"Team",data:function(){return{}},components:{TeamPage:c["a"]}},r=o,l=a("2877"),s=Object(l["a"])(r,t,u,!1,null,null,null);n["default"]=s.exports}}]);
-//# sourceMappingURL=team.fa2a6a11.js.map
