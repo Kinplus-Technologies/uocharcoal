@@ -13,13 +13,15 @@ require 'PHPMailer/src/Exception.php';
 		$from = $data['name'];
 			$subject = "Request Quote - from {$from}";
 			$msg = '';
+			$msg2 = "UOcharcoal has a new Request Quote  from {$from}. Check your email for detail.";
+			
 			foreach ($data as $key => $value) {
 				$msg .= "<p>".ucwords($key). ": {$value}</p>";
 			}				
 				$maildata = send_mail(new PHPMailer(), $msg, 'nnoromstan@yahoo.com', $subject);				
 				$maildata = send_mail(new PHPMailer(), $msg, 'emagbetereoruese@gmail.com', $subject);				
-				$smsdata = send_message("{$subject}. UOcharcoal.com");
-				
+				$smsdata = send_message($msg2);
+
 			if($maildata['mailsent']){
 				echo json_encode(['ok'=>1]);
 			}else {
